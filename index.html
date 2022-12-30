@@ -61,46 +61,46 @@
   </header>
   <main>
     
-<div class="hero">
-    <div class="hero-text">
-        <h2>Hello! PostgreSQL lovers</h2>
-        <h1>2<sup>nd</sup> PostgreSQL Conference Nepal, 2023</h1>
-        <p class="hero-text-par">
-            Welcome to the second PostgreSQL Conference happening on 18-19 May 2023 in Nepal. 
-            After the successful organization of the first-ever PostgreSQL Conference Nepal in May 4-5, 2018, 
-            we are excited to announce this years conference.
-            In the previous conference, we had quite a few exciting talks from internationally 
-            renowned and prominent personalities from the PostgreSQL community as well as from many local speakers.
-            <br>
-            We hope to continue the trend for this year and have similar support 
-            from the international community as well as locally
-        </p>
-        <div class="event-info">
-            <div class="schedule-text">
-                <h2 id="start-date">2023 May, 18(Thu) ~ 19(Fri)</h2>
-                <h3>@ Kathmandu University, Dhulikhel, Nepal</h3>
+    <div class="hero">
+        <div class="hero-text">
+            <h2>Hello! PostgreSQL lovers</h2>
+            <h1>2<sup>nd</sup> PostgreSQL Conference Nepal, 2023</h1>
+            <p class="hero-text-par">
+                Welcome to the second PostgreSQL Conference happening on 11-12 May 2023 in Nepal.
+                After the successful organization of the first-ever PostgreSQL Conference Nepal in May 4-5, 2018,
+                we are excited to announce this years conference.
+                In the previous conference, we had quite a few exciting talks from internationally
+                renowned and prominent personalities from the PostgreSQL community as well as from many local speakers.
+                <br>
+                We hope to continue the trend for this year and have similar support
+                from the international community as well as locally
+            </p>
+            <div class="event-info">
+                <div class="schedule-text">
+                    <h2 id="start-date">2023 May 11 (Thu) ~ 12 (Fri)</h2>
+                    <h3>@ Kathmandu University, Dhulikhel, Nepal</h3>
+                </div>
+
+                <table class="date-con">
+                    <tr>
+                        <td id="date-con-title" colspan="4">Countdown to your event</td>
+                    </tr>
+                    <tr>
+                        <td>Days</td>
+                        <td>Hours</td>
+                        <td>Minutes</td>
+                        <td>Seconds</td>
+                    </tr>
+                    <tr>
+                        <td id="days">115</td>
+                        <td id="hours">13</td>
+                        <td id="minutes">2</td>
+                        <td id="seconds">42</td>
+                    </tr>
+                </table>
             </div>
-            
-            <table class="date-con">
-                <tr>
-                    <td id="date-con-title" colspan="4">Countdown to your event</td>
-                </tr>
-                <tr>
-                    <td>Days</td>
-                    <td>Hours</td>
-                    <td>Minutes</td>
-                    <td>Seconds</td>
-                </tr>
-                <tr>
-                    <td id="days">115</td>
-                    <td id="hours">13</td>
-                    <td id="minutes">2</td>
-                    <td id="seconds">42</td>
-                </tr>
-            </table>
         </div>
     </div>
-</div>
 
   </main>
 
@@ -121,7 +121,35 @@
   <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
   <script src="static/js/featured.js"></script>
   
-<script src="static/js/countdown.js"></script>
+    <script>
+        (function countDown() {
+            const now = new Date()
+            const eventDate = new Date('2023-05-11T00:00:00')
+            const currentTime = now.getTime()
+            const eventTime = eventDate.getTime()
+
+            const remTime = eventTime - currentTime
+            let s = Math.floor(remTime / 1000)
+            let m = Math.floor(s / 60)
+            let h = Math.floor(m / 60)
+            const d = Math.floor(h / 24)
+
+            h %= 24
+            m %= 60
+            s %= 60
+
+            h = h < 10 ? `0${h}` : h
+            m = m < 10 ? `0${m}` : m
+            s = s < 10 ? `0${s}` : s
+
+            document.getElementById('days').textContent = d;
+            document.getElementById('hours').textContent = h;
+            document.getElementById('minutes').textContent = m;
+            document.getElementById('seconds').textContent = s;
+
+            setTimeout(countDown, 1000)
+        })()
+    </script>
 
 
 </body>
