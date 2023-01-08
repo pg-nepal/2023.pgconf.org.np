@@ -6,7 +6,8 @@
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css">
 
   <link
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
@@ -16,51 +17,56 @@
 </head>
 
 <body>
-  <header class="header" id="header"> 
-    <nav class="navbar">
-      <div class="nav2">
-        <div class="nav-head-sec">
-          <button type="button" aria-label="Hamburger" class="nav-toggle" id="nav-toggle">
-            <i class="fas fa-bars"></i>
+  <header>
+    <link rel="stylesheet" href="static/navbar.css">
+<div class="top-header">
+    <div class="logoo">
+            <img class="logo-img" src="static/images/np-pug-logo.png" alt="Logo">
+            <div class="logo-text">
+              <span>PGConference Nepal - 2023</span>
+            </div>
+    </div>
+</div>
+<div class="header-area">
+    <!-- site-navbar start -->
+    <div class="navbar-area">
+      <div class="container">
+        <nav class="site-navbar">
+
+          <ul class="nav-menu" id="nav-menu">
+            <li class="nav-lis">
+                <a href="index.html" class="nav-item">Home</a>
+            </li>
+            <li class="nav-lis">
+                <a href="about.html" class="nav-item">About</a>
+            </li>
+            <li class="nav-lis">
+                <a href="call_for_proposal.html" class="nav-item">Call for Proposal</a>
+            </li>
+            <li class="nav-lis">
+                <a href="schedule.html" class="nav-item">Schedule</a>
+            </li>
+            <li class="nav-lis">
+                <a href="speakers.html" class="nav-item">Speakers</a>
+            </li>
+            <li class="nav-lis">
+                <a href="sponsor.html" class="nav-item">Sponsor</a>
+            </li>
+        </ul>
+
+          <!-- nav-toggler for mobile version only -->
+          <button class="nav-toggler">
+            <span></span>
           </button>
-          <div class="logo"id="logo">
-            <a href="index.html"> <img class="logo-img" src="static/images/np-pug-logo.png" alt="Logo"></a>
-                <div class="logo-text">
-                    <a href="index.html"> <span>PGConference Nepal - 2023</span></a>  
-                </div>
-                  
-          </div>
-        </div>
-        <ul class="nav-menu" id="nav-menu">
-    <li>
-        <button type="button" id="close-btn" aria-label="Close" class="hidden">
-            <i class="fas fa-times"></i>
-        </button>
-    </li>
-    <li class="nav-lis">
-        <a href="index.html" class="nav-item">Home</a>
-    </li>
-    <li class="nav-lis">
-        <a href="about.html" class="nav-item">About</a>
-    </li>
-    <li class="nav-lis">
-        <a href="call_for_proposal.html" class="nav-item">Call for Proposal</a>
-    </li>
-    <li class="nav-lis">
-        <a href="schedule.html" class="nav-item">Schedule</a>
-    </li>
-    <li class="nav-lis">
-        <a href="speakers.html" class="nav-item">Speakers</a>
-    </li>
-    <li class="nav-lis">
-        <a href="sponsor.html" class="nav-item">Sponsor</a>
-    </li>
-</ul>
+        </nav>
       </div>
-    </nav>
+    </div><!-- navbar-area end -->
+  </div>
+ 
   </header>
-  <main>
+  <main style="margin-top: 125px;">
     
+
     <div class="hero">
         <div class="hero-text">
             <h2>Hello! PostgreSQL lovers</h2>
@@ -73,7 +79,7 @@
                 renowned and prominent personalities from the PostgreSQL community as well as from many local speakers.
                 <br>
                 We hope to continue the trend for this year and have similar support
-                from the international community as well as locally
+                from the international community as well as locally.
             </p>
             <div class="event-info">
                 <div class="schedule-text">
@@ -101,6 +107,7 @@
             </div>
         </div>
     </div>
+
 
   </main>
 
