@@ -1,5 +1,5 @@
 :root {
-  --font-family: lato, 'sans-serif';
+  --font-family: 'sans-serif';
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
   --radius: 0.5rem;
@@ -21,6 +21,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-size: 1rem;
 }
 
 body {
@@ -28,11 +29,27 @@ body {
   background: var(--white);
   color: var(--lighter-grey);
   line-height: 1.5;
-  font-size: 0.875rem;
+  font-size: 1rem;
+  /* background:
+    linear-gradient(
+      rgba(210, 234, 100, 0.2),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url(/static/images/everest-nepal.jpg) center/cover no-repeat; */
 }
 
 ul {
   list-style-type: none;
+}
+
+li {
+  padding: 5px;
+  line-height: 1.5;
+}
+
+oi {
+  padding-top: 5px;
+  line-height: 1.5;
 }
 
 .ul-list {
@@ -56,25 +73,33 @@ h1 {
 
 h1 {
   font-size: 3rem;
+  font-weight: 800;
+}
+h1::first-letter {
+  font-size: 5rem;
+  font-weight: 4000;
 }
 
 h2 {
   font-size: 2rem;
+  font-weight: 700;
 }
 
 h3 {
   font-size: 1.25rem;
+  font-weight: 600;
 }
 
 h4 {
   font-size: 0.875rem;
+  font-weight: 400;
 }
 
 p {
   margin-bottom: 1.25rem;
   color: var(--black);
+  font-family:lato, "sans-serif";
 }
-
 .hidden {
   display: none;
 }
@@ -98,8 +123,10 @@ p {
   width: 1.875em;
 }
 
+/*
 .header {
   padding-top: 1.5rem;
+
 }
 
 .logo {
@@ -114,7 +141,7 @@ p {
 }
 
 .logo-img {
-  height: 2rem;
+  height: 2.5rem;
   width: 8rem;
   padding-left: 0.5rem;
 }
@@ -130,15 +157,25 @@ p {
   left: 0;
   width: 100%;
   z-index: 15;
-}
+  background-color: #C7DBEE;
 
+}
+.navbar .nav1{
+  margin: 0rem 0rem;
+}
 .nav1 {
   display: none;
-  padding: 5px 5rem;
-  background-color: var(--black);
-  color: var(--white);
+  width: 100%;
+  padding: 8px 0;
+box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+border-radius: 20px;
+background-color: #C5DBEE;
 }
-
+.nav1 .nav-menu{
+  display: flex;
+  justify-content:flex-start;
+  margin-left: 8rem;
+}
 .nav1-items {
   width: 90%;
   display: flex;
@@ -224,7 +261,7 @@ p {
 
 .active {
   color: var(--carmine-pink);
-}
+} */
 
 #close-btn {
   background: transparent;
@@ -236,22 +273,60 @@ p {
   cursor: pointer;
 }
 
+/* grid layout */
+.grid-container{
+  display: grid;
+  grid-template-columns: 3fr  1fr;
+  text-align: left;
+  margin-top: 20pt;
+  margin-bottom: 2%;
+}
+.grid-item{
+  background-color: transparent !important;
+}
+.left-part{
+  grid-column: 1/2;
+  float: left;
+  text-align: left;
+  background-color: #fff !important;
+}
+.grid-text{
+  padding: 10px;
+}
+.right-menu{
+  grid-column: 2/3;
+  padding-left: 10px;
+  background-color: transparent;
+  text-align: left;
+  padding-top: 0;
+}
+.right-menu .grid-sub-item{
+  background-color: transparent !important;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border: 2px  solid #fff;
+}
+
+@media screen and (max-width: 570px){
+.right-menu .grid-sub-item {
+    background-color: transparent !important;
+    padding: 10px;
+    box-shadow: rgb(0 0 0 / 40%) 0px 2px 4px, rgb(0 0 0 / 30%) 0px 7px 13px -3px, rgb(0 0 0 / 20%) 0px -3px 0px inset;
+    border: 5px solid #fff;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+}
+
+
 .hero {
-  margin-top: 0;
   display: flex;
   padding: 0 1rem;
   margin-bottom: 0;
-  background:
-    linear-gradient(
-      rgba(210, 234, 247, 0.8),
-      rgba(255, 255, 255, 0.9)
-    ),
-    url(images/everest-nepal.jpg) center/cover no-repeat;
-  padding-top: 2rem;
 }
 
 .hero-text {
-  margin-top: 20%;
+  background-color:  transparent !important;
 }
 
 .hero-text h2 {
@@ -260,23 +335,23 @@ p {
 }
 
 /* stylelint-disable */
-.hero-text h1 {
-  background-image: url(images/orange-globe.png);
+.hero-text h1 { 
   background-size: cover;
   background-position: center;
   -webkit-background-clip: text;
   background-clip: text;
   color: var(--darker-grey);
   margin-top: 1rem;
+  font-size: 2rem;
 }
 
 /* stylelint-enable */
 
 .hero-text-par {
   color: var(--black);
-  border: 1px dotted rgb(216, 255, 192);
-  padding: 1rem;
-  background: var(--white);
+  border-right: none;
+  border-top: none;
+  background: transparent !important;
 }
 
 #start-date {
@@ -288,7 +363,6 @@ p {
 
 .hero-text h3 {
   font-size: 1rem;
-  margin: 1rem 0;
   color: var(--black);
   font-weight: normal;
 }
@@ -853,14 +927,14 @@ p {
   }
 
   body {
-    font-size: 1.2rem;
+    font-size: 0.875rem;
   }
 
   h4,
   h3,
   h2,
   h1 {
-    line-height: 1;
+    line-height: 1.5;
   }
 }
 
@@ -914,23 +988,32 @@ p {
   .hero-text {
     width: 70%;
     margin: 0 auto;
-    margin-top: 10%;
+    /* margin-top: 15%; */
   }
   .hero-text-header{
-    width: 70%;
+    /* width: 70%; */
     margin: 0 auto;
-    margin-top: 2% !important;
     color: var(--darker-grey) !important;
   }
 
   .hero-text h1 {
     font-family: sans-serif;
-    font-size: 4rem;
-    font-weight: 1000;
+    font-size: 3.5rem;
+    font-weight: 2500;
+    color: #336791;
+    opacity: 999;
+   letter-spacing: 2px;
+  }
+
+  .hero-text h2 {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
   }
 
   .hero-text p {
     max-width: 50%;
+    padding: 10px 0px;
   }
 
   .start-date {
@@ -940,7 +1023,9 @@ p {
   }
 
   .hero-text h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    margin-top: 5px;
+
   }
 
   .event-info {
@@ -1128,14 +1213,22 @@ p {
     align-items: center;
     gap: 3rem;
   }
-
+ .footer .logo{
+  display: flex;
+  flex-direction: row;
+ }
   .footer .logo-img {
     width: 12rem;
     height: 4rem;
     border-right: 2px solid;
     padding-right: 5px;
   }
-
+  .footer .logo-text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+  }
   .footer .logo-text span {
     font-size: 2rem;
   }
@@ -1227,10 +1320,6 @@ p {
     display: inherit;
   }
 
-  .hero {
-    margin-top: 0;
-  }
-
   .hero-text-par {
     background: var(--white);
   }
@@ -1238,6 +1327,10 @@ p {
   .hero-text p {
     max-width: 100%;
     margin-bottom: 0;
+    font-family:sans-serif;
+    font-weight: 400;
+    word-spacing: 5px;
+    text-align: justify;
   }
 
   .schedule-text {
@@ -1248,8 +1341,7 @@ p {
   }
 
   .footer {
-    height: 18rem;
-    background-color: var(--white);
+    background-color: #AFBFC4;
   }
 
   .about-foot {
@@ -1300,3 +1392,117 @@ p {
   }
 }
 
+@media (max-width: 572px) {
+
+  .footer {
+    padding: 3rem;
+    background-color: var(--white);
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+.footer .logo{
+  display: flex;
+  flex-direction: row;
+ }
+  .footer .logo-img {
+    width: 12rem;
+    height: 4rem;
+    border-right: 2px solid;
+    padding-right: 5px;
+  }
+  .footer .logo-text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+
+
+
+
+
+
+
+  }
+  .footer .logo-text span {
+    font-size: 2rem;
+  }
+}
+
+.banner{
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 75px;
+}
+.banner-container{
+  width: 100%;
+  margin: 0 auto;
+  background:
+    linear-gradient(
+      rgba(210, 234, 100, 0.2),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url(images/everest-nepal.jpg) center/cover no-repeat;
+}
+.banner-text{
+  background: #617d9839;
+  border: 1px solid #3367911f;
+  padding: 10px;
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 2.2rem;
+}
+
+.banner h2 { 
+  color: #102a42;
+}
+
+.banner h1 { 
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin-top: 1rem;
+  color: #346791;
+}
+
+.main_background{
+  background:
+    linear-gradient(
+      rgba(210, 234, 100, 0.2),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url(images/everest-nepal.jpg) center/cover no-repeat;
+}
+
+
+.section_header{
+  font-size: 1.75rem;
+  background-color: #336791;
+  color: #fff;
+  padding: 5px;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+.section_header_small{
+  font-size: 1.25rem;
+  background-color: #336791;
+  color: #fff;
+  padding: 5px;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+.section_text{
+  text-align: justify;
+}
+
+
+.hero-text a{
+  text-decoration: underline;
+  color: blue;
+}

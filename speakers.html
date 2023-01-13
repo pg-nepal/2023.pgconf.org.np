@@ -6,7 +6,8 @@
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css">
 
   <link
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
@@ -16,72 +17,129 @@
 </head>
 
 <body>
-  <header class="header" id="header"> 
-    <nav class="navbar">
-      <div class="nav2">
-        <div class="nav-head-sec">
-          <button type="button" aria-label="Hamburger" class="nav-toggle" id="nav-toggle">
-            <i class="fas fa-bars"></i>
+  <header>
+    <link rel="stylesheet" href="static/navbar.css">
+<div class="top-header">
+    <div class="logoo">
+            <img class="logo-img" src="static/images/np-pug-logo.png" alt="Logo">
+            <div class="logo-text">
+              <span>PGConference Nepal - 2023</span>
+            </div>
+    </div>
+</div>
+<div class="header-area">
+    <!-- site-navbar start -->
+    <div class="navbar-area">
+      <div class="container">
+        <nav class="site-navbar">
+
+          <ul class="nav-menu" id="nav-menu">
+            <li class="nav-lis">
+                <a href="index.html" class="nav-item">Home</a>
+            </li>
+            <li class="nav-lis">
+                <a href="about.html" class="nav-item">About</a>
+            </li>
+            <li class="nav-lis">
+                <a href="call_for_proposal.html" class="nav-item">Call for Proposal</a>
+            </li>
+            <li class="nav-lis">
+              <a href="pre_conf.html" class="nav-item">Training</a>
+          </li>
+            <li class="nav-lis">
+                <a href="schedule.html" class="nav-item">Schedule</a>
+            </li>
+            <li class="nav-lis">
+                <a href="speakers.html" class="nav-item">Speakers</a>
+            </li>
+            <li class="nav-lis">
+                <a href="sponsor.html" class="nav-item">Sponsor</a>
+            </li>
+        </ul>
+
+          <!-- nav-toggler for mobile version only -->
+          <button class="nav-toggler">
+            <span></span>
           </button>
-          <div class="logo"id="logo">
-            <a href="index.html"> <img class="logo-img" src="static/images/np-pug-logo.png" alt="Logo"></a>
-                <div class="logo-text">
-                    <a href="index.html"> <span>PGConference Nepal - 2023</span></a>  
-                </div>
-                  
-          </div>
-        </div>
-        <ul class="nav-menu" id="nav-menu">
-    <li>
-        <button type="button" id="close-btn" aria-label="Close" class="hidden">
-            <i class="fas fa-times"></i>
-        </button>
-    </li>
-    <li class="nav-lis">
-        <a href="index.html" class="nav-item">Home</a>
-    </li>
-    <li class="nav-lis">
-        <a href="about.html" class="nav-item">About</a>
-    </li>
-    <li class="nav-lis">
-        <a href="call_for_proposal.html" class="nav-item">Call for Proposal</a>
-    </li>
-    <li class="nav-lis">
-        <a href="schedule.html" class="nav-item">Schedule</a>
-    </li>
-    <li class="nav-lis">
-        <a href="speakers.html" class="nav-item">Speakers</a>
-    </li>
-    <li class="nav-lis">
-        <a href="sponsor.html" class="nav-item">Sponsor</a>
-    </li>
-</ul>
+        </nav>
       </div>
-    </nav>
+    </div><!-- navbar-area end -->
+  </div>
+ 
   </header>
-  <main>
+  <main style="margin-top: 125px;">
     
-
+<div class="main_background">
     <div class="hero">
-        <div class="hero-text hero-text-header">
-            <h2>Speakers <h3>talks and workshop sessions</h3></h2>
+        <div class="hero-text">
+            <div class="hero-text-header">
+                <h3>
+Speakers<br>
+<small>talks and workshop sessions</small>
+</h3>
+            </div>
             <div class="hero-text-par">
-                
-<h3>Keynotes</h3>
-List will be published soon.
+                <div class="grid-container">
+                    <div class="grid-item left-part" style="min-height:500px;">
+                        <div class="grid-text">
+                            
 
-<h3>Talks</h3>
-List will be published soon.
+    <h3>Keynotes</h3>
+    <p class="hero-text-par">
+        List will be published soon.
+    </p>
 
-<h3>Workshops</h3>
-List will be published soon.
+    <h3>Talks</h3>
+    <p class="hero-text-par">
+        List will be published soon.
+    </p>
 
-<div style="min-height:300px;"></div>
+    <h3>Workshops</h3>
+    <p class="hero-text-par">
+        List will be published soon.
+    </p>
 
+
+                        </div>
+                    </div>
+                    <div class="grid-item right-menu">
+                        <style>
+    label {
+        display: block;
+        font: 1rem 'Fira Sans', sans-serif;
+    }
+
+    input,
+    label {
+        margin: 0.4rem 0;
+    }
+</style>
+
+<div class="grid-sub-item">
+    <h2 id="start-date" style="font-size: 20px; letter-spacing: 0px; word-spacing: 0;">2023 May 11 (Thu) ~ 12 (Fri)</h2>
+    <h3 style="font-size: 21px;">@Dhulikhel, Nepal</h3>
+</div>
+<br />
+<div class="grid-sub-item">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1286.4999980968216!2d85.538371116359!3d27.618860565103255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb092082d99e3b%3A0xe509dafa47685dba!2z4KSV4KS-4KSg4KSu4KS-4KSh4KWM4KSCIOCkteCkv-CktuCljeCkteCkteCkv-CkpuCljeCkr-CkvuCksuCkrw!5e0!3m2!1sne!2snp!4v1673176323107!5m2!1sne!2snp" width="310" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<br/>
+<div class=" grid-sub-item">
+    <a target="_blank"
+        href="http://www.google.com/calendar/event?action=TEMPLATE&dates=20230511T011500Z%2F20230512T121500Z&text=2nd%20PostgreSQL%20Conference%20Nepal%2C%202023&location=Kathmandu%20University%2C%20Dhulikhel%2C%20Nepal&details=Event%3A%202md%20PostgreSQL%20Conference%20Nepal%0A11-12%20May%202023%0AVenue%3A%20Kathmandu%20University%2C%20Dhulikhel%2C%20Nepal">
+        <img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en-GB.gif">
+        <br>
+        Mark Date in Google Calender
+        May 11 - 12, 2023
+    </a>
+</div>
+<br />
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
+</div>
 
   </main>
 
