@@ -91,32 +91,30 @@ Speakers<br>
                         <div class="grid-text">
                             
 
-<div class="section_header_small">Keynote by Oleg Bartunov</div> 
+<div class="section_header_small">talk by Egor Rogov</div> 
     <div class="each-speaker">
         <div class="speaker-img">
-            <img src="../static/speakers/oleg.jpg" class="speaker-photo" alt="Featured Speaker">
+            <img src="../static/speakers/egor.jpg" class="speaker-photo" alt="Featured Speaker">
         </div>
         <div class="speaker-text">
-            <h3>SQL/JSON in PostgreSQL 16</h3>
-            <span class="italic">Oleg Bartunov</span>
+            <h3>A retrospective look at the statistics</h3>
+            <span class="italic">Egor Rogov</span>
             <div class="underline-small"></div>
 
             <b>Abstract: </b><br>
             <p class="speaker-text-p">
-                            As time goes by, there is a growing trend in the use of JSON and JSONB in production databases. 
-                            Moreover, PostgreSQL is continuously adding new NoSQL-related (support of json, jsonb etc.) 
-                            features. 
-                            <br>In this presentation, the latest advancements in PostgreSQL 16 
-                             regarding JSON will be discussed, with a particular focus 
-                            on the new features that have been recently adopted.
+                            To build a decent query plan, the optimizer has to understand statistical characteristics of underlying data, which requires to find a balance between accuracy and the volume of gathered statistics. It is important to get a grasp of the concept, because selectivity misestimates are known to be a frequent cause of poor query plans.
+                            <br><br>
+                            I will show how the structure of the collected statistics has evolved and become more complicated over time: what the optimizer relied on back in its early days and what is at his disposal now with the new release of PostgreSQL. I will also talk about how to manage statistics and whether it is necessary to think about it at all.
                         </p>
             <br>
             <br>
             <b>About Speaker: </b><br>
             <p class="speaker-text-p">
-                            Oleg Bartunov has been involved in PostgreSQL development since 1996 (he introduced locale support). He is a major developer and a member of the PGDG. Together with his colleague Teodor Sigaev he developed infrastructure for implementing user-defined index access methods GiST, GIN and SP-GiST, built-in full-text search facilities in PostgreSQL (formerly known as tsearch2) and a number of popular extensions like intarray, ltree, hstore, pg_trgm, jsquery and rum access method. His latest contributions are jsonb and implementation of SQL/JSON. His current project is pluggable TOAST API and  scalable JSONB/JSON.
-
-                            Oleg graduated from the Astronomy department of the Physics department at Lomonosov's Moscow State University. During his professional work at Sternberg Astronomical Institute (SAI MSU) he realized he needed a free and powerful open-source database like PostgreSQL (Postgres95 that time). Since then he extensively used PostgreSQL in his scientific work and many other projects. Oleg is an active member of the Russian PostgreSQL community, he advocated the adoption of PostgreSQL by the astronomical community.
+                            Egor Rogov is the author of “PostgreSQL Internals” book and co-author of “Postgres: The First Experience” booklet. 
+                            Egor graduated from Computer Science Faculty of Lomonosov Moscow State University and 
+                            has more than 15 years of Database Management Systems experience as an application developer and project manager. 
+                            Since 2015 Egor works on educational programs in Postgres Professional company. 
                         </p>
         </div>
     </div> 

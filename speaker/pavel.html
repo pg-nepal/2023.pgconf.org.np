@@ -91,32 +91,44 @@ Speakers<br>
                         <div class="grid-text">
                             
 
-<div class="section_header_small">Keynote by Oleg Bartunov</div> 
+<div class="section_header_small">talk by Pavel Tolmachev</div> 
     <div class="each-speaker">
         <div class="speaker-img">
-            <img src="../static/speakers/oleg.jpg" class="speaker-photo" alt="Featured Speaker">
+            <img src="../static/speakers/pavel.jpg" class="speaker-photo" alt="Featured Speaker">
         </div>
         <div class="speaker-text">
-            <h3>SQL/JSON in PostgreSQL 16</h3>
-            <span class="italic">Oleg Bartunov</span>
+            <h3>Query plans. Reading, comprehension and acceleration</h3>
+            <span class="italic">Pavel Tolmachev</span>
             <div class="underline-small"></div>
 
             <b>Abstract: </b><br>
             <p class="speaker-text-p">
-                            As time goes by, there is a growing trend in the use of JSON and JSONB in production databases. 
-                            Moreover, PostgreSQL is continuously adding new NoSQL-related (support of json, jsonb etc.) 
-                            features. 
-                            <br>In this presentation, the latest advancements in PostgreSQL 16 
-                             regarding JSON will be discussed, with a particular focus 
-                            on the new features that have been recently adopted.
+                            SQL is a declarative programming language used to create and manipulate objects in relational databases but it doesn't describe how to get the data. The query optimizer (called simply the optimizer or planner) is a built-in database component that determines the most efficient method for a SQL statement to access requested data. 
+                            <br>
+                            PostgreSQL devises a query plan for each query it receives. We can use the EXPLAIN command to see what query plan the optimizer creates for any query. Plan-reading is an art that requires some experience to master.
+                            <br><br>
+                            In this report, I will talk about: <br>
+                            - EXPLAIN command;<br>
+                            - its various parameters;<br>
+                            - plan structure;<br>
+                            - its different plan nodes and elements;<br>
+                            - and using indexes and other techniques for Query Performance Tuning.<br>
+                            <br><br>
+                            I will demonstrate all my examples on our free demo database for PostgreSQL. The subject field of this database is airline flights across various airports.
                         </p>
             <br>
             <br>
             <b>About Speaker: </b><br>
             <p class="speaker-text-p">
-                            Oleg Bartunov has been involved in PostgreSQL development since 1996 (he introduced locale support). He is a major developer and a member of the PGDG. Together with his colleague Teodor Sigaev he developed infrastructure for implementing user-defined index access methods GiST, GIN and SP-GiST, built-in full-text search facilities in PostgreSQL (formerly known as tsearch2) and a number of popular extensions like intarray, ltree, hstore, pg_trgm, jsquery and rum access method. His latest contributions are jsonb and implementation of SQL/JSON. His current project is pluggable TOAST API and  scalable JSONB/JSON.
-
-                            Oleg graduated from the Astronomy department of the Physics department at Lomonosov's Moscow State University. During his professional work at Sternberg Astronomical Institute (SAI MSU) he realized he needed a free and powerful open-source database like PostgreSQL (Postgres95 that time). Since then he extensively used PostgreSQL in his scientific work and many other projects. Oleg is an active member of the Russian PostgreSQL community, he advocated the adoption of PostgreSQL by the astronomical community.
+                            As an experienced programmer, Pavel Tolmachev have worked with  PostgreSQL, 
+                            C#, WinForms, WPF, ASP.NET, and Oracle PL/SQL. 
+                            He have been involved in the implementation of electronic document management systems 
+                            and have also worked as a teacher, instructing students, administrators, and application programmers.
+                            <br>
+                            Currently, he is engaged in educational programs in Postgres Professional, 
+                            where he write articles, workshops, training courses, make presentations, and more. 
+                            Since his student days, he have had a keen interest in DBMS, 
+                            and  especially enjoyed studying the workings of the optimizer.
                         </p>
         </div>
     </div> 
