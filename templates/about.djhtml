@@ -12,7 +12,7 @@
         <div class="welcome-content">
         <h1>Welcome</h1>
         <p>
-            Welcome to the second PostgreSQL Conference happening on 5-6 May 2023 in Kathmandu University, 
+            Welcome to the third PostgreSQL Conference happening on 5-6 May 2025 in Kathmandu University, 
             Dhulikhel, Kavre, Nepal. After the successful organization of the first-ever PostgreSQL Conference
              Nepal in May 4-5, 2018, we are excited to announce this year’s conference. In the previous conference, 
              we had quite a few exciting talks from internationally renowned and prominent personalities from the PostgreSQL
@@ -36,32 +36,6 @@
         <p>
             Please check our <a href="/code_of_conduct">Code of conduct.</a>
         </p>
-    </div>
-
-    <div class="welcome-content">
-        <h1>Organizing committee</h1>
-        <ol>
-            <li><p>Dr. Oleg Bartunov - Postgres Professional, Russia</p></li>
-            <li><p>Mr. Andreas Scherbaum - European PostgreSQL</p></li>
-            <li><p>Dr. Bal Krishna Bal - Kathmandu University</p></li>
-            <li><p>Mr. Hempal Shrestha - Civil Society and Open Source Activist</p></li>
-            <li><p>Dr. Sushil Shrestha - Kathmandu University</p></li>
-            <li><p>Mr. Rupak Raj Ghimire - Uniaxial Softwares Pvt. Ltd.</p></li>
-            <li><p>Mr. Rohit Man Amatya - Beta Analytics Pvt. Ltd.</p></li>
-            <li><p>Mr. Chandan Gupta - RainLocal Inc.</p></li>
-            <li><p>Mr. Sagun Dhakhwa - Outlines Research & Development</p></li>
-        </ol>
-    </div>
-
-    <div class="welcome-content">
-        <h1>Talks selection committee</h1>
-        <ol>
-            <li><p>Dr. Oleg Bartunov</p></li>
-            <li><p>Mr. Andreas Scherbaum</p></li>
-            <li><p>Dr. Bal Krishna Bal</p></li>
-            <li><p>Hempal Shrestha</p></li>
-            <li><p>Rupak Raj Ghimire</p></li>
-        </ol>
     </div>
 
     <div class="welcome-content">
