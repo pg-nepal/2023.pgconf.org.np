@@ -3,111 +3,50 @@
 {% block title%}/Home{% endblock %}
 
 {% block main %}
+<link rel="stylesheet" href="/static/css/home.css">
+<div class="content-container">
     <div class="banner-container">
-        <div class="banner">
-            <h2>Hello! PostgreSQL lovers</h2>
-            <h1>2 <sup style="font-size: 2.5rem;">nd</sup> PostgreSQL Conference Nepal, 2023</h1> 
-            
-                <div class="banner-text">
-                    Welcome to the second PostgreSQL Conference happening on {{eventOn.strftime('%d')}}-{{eventTo.strftime('%d %b %Y')}} in Nepal.
-                    After the successful organization of the first-ever PostgreSQL Conference Nepal in May 4-5, 2018,
-                    we are excited to announce this years conference.
-                    In the previous conference, we had quite a few exciting talks from internationally
-                    renowned and prominent personalities from the PostgreSQL community as well as from many local speakers.
-                    <br>
-                    We hope to continue the trend for this year and have similar support
-                    from the international community as well as locally.
-                </div> 
-            <div class="event-info">
-                <div class="schedule-text">
-                    <h2 id="start-date">{{eventOn.strftime('%Y %b %d (%a)')}} ~ {{eventTo.strftime('%d (%a)')}}</h2>
-                    <h3>@ Kathmandu University, Dhulikhel, Nepal</h3>
-                </div>
-
-                {#
-                    <table class="date-con">
-                        <tr>
-                            <td id="date-con-title" colspan="4">Countdown to your event</td>
-                        </tr>
-                        <tr>
-                            <td>Days</td>
-                            <td>Hours</td>
-                            <td>Minutes</td>
-                            <td>Seconds</td>
-                        </tr>
-                        <tr>
-                            <td id="days">115</td>
-                            <td id="hours">13</td>
-                            <td id="minutes">2</td>
-                            <td id="seconds">42</td>
-                        </tr>
-                    </table>
-                #}
-            </div>
+        <div class="hero">
+            <h1>Second PostgreSQL Conference Nepal, 2023</h1> 
+            <h1>5 to 6 May, 2023</h1> 
         </div>
     </div>
-    <div class="hero">
-        <div class="hero-text"> 
-            <div class="grid-container">
-                <div class="grid-item left-part">
-                    <div class="section_header">Conference Conclusion</div>
-                    <div class="section_text">
-                        <center> 
-                            <img src="/static/main_conference.jpg" height="550" />
-                            <img src="/static/training3.jpeg" height="550" />
-                        </center>
-                    </div>
-                    <div class="section_header">Main Conference Schedule</div>
-                    <div class="section_text">
-                        <center>
-                            <a href="/static/PostgreSQL_Conference_Nepal_2023_Schedule.pdf" target="_blank">
-                                <img src="/static/pg-conf-schedule.png" height="400" />
-                            </a>
-                        </center>
-                    </div>
 
+    <div class="intro">
+        <p>Welcome to the second PostgreSQL Conference happening on 11-12 May 2023 in Nepal. After the successful organization of the first-ever PostgreSQL Conference Nepal in May 4-5, 2018, we are excited to announce this years conference. In the previous conference, we had quite a few exciting talks from internationally renowned and prominent personalities from the PostgreSQL community as well as from many local speakers.
+            We hope to continue the trend for this year and have similar support from the international community as well as locally.</p>
+    </div>
+    <div class="conference-conclusion">
+        <h1>Conference Conclusion</h1>
+        <img src="/static/main_conference.jpg" alt="Main Conference">
+        <img src="/static/training3.jpeg" alt="Training">
 
-                    <div class="section_header">Register</div>
-                    <div class="section_text">
-                         <video width="950" controls>
-                            <source src="static/pgconfnepal.2023.hd-final.mp4"  type="video/mp4">
-                            Pgconf video
-                        </video> 
-                    </div>
-                    <div class="section_header">Pre-Conference Workshop</div>
-                    <div class="section_text">
-                        <a href="/pre_conf">
-                            <img src="/static/images/Intro to PG15-banner.png" class="img-responsive">
-                        </a>
-                        <br>
-                        <b>About Training</b><br>
-                        Date: <s>May 9-10, 2023</s><br>
-                        Venue: Kathmandu University, Dhulikhel, Kathmandu<br>
-                        Training Lead: Egor Rogov<br>
-                        <br>
-                        For registration and other details please <a href="/pre_conf">check here</a>
-                    </div>
-
-                    <br>
-                    <br>
-                    <br>
-
-                    <div class="section_header_small">Contact Organizers</div>
-                    Reachout to the organizers using email : info@pgconf.org.np <br><br>
-                    {% include 'keydates.html' %}
-                    <br>
-                    <br>
-
-                    {% include 'sponsor_list.html' %}
-                    {% include "hotels.html" %}
-
-                </div>
-                <div class="grid-item right-menu">
-                    {% include 'right_menubar_home.html' %}
-                </div>
-            </div>
+    </div>
+    <div class="conference-conclusion">
+        <h1>Main Conference Schedule</h1>
+        <div class="box">
+        <h1>Coming Soon...</h1>
         </div>
     </div>
+    <div class="conference-conclusion">
+        <h1>Register</h1>
+                <div class="box">
+        <h1>Coming Soon...</h1>
+        </div>
+    </div>
+    <div class="conference-conclusion">
+        <h1>Pre-Conference Workshop</h1>
+                <div class="box">
+        <h1>Coming Soon...</h1>
+        </div>
+    </div>
+    <div class="conference-conclusion">
+        <h1>Pre-Conference Workshop</h1>
+                <div class="box">
+        <h1>Coming Soon...</h1>
+        </div>
+    </div>
+</div>
     
 {% endblock %}
 
