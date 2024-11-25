@@ -2,80 +2,79 @@
 {% block title%}/About{% endblock %}
 
 {% block page_title%}
-About 
-<br>
-<small>organizing committee/talks selection committee</small>
-{% endblock %}
+<link rel="stylesheet" href="/static/css/about.css">
 
-{% block main_content %} 
-    <p class="hero-text-par">
-    <div class="section_header_small">Welcome</div>
-        Welcome to the second PostgreSQL Conference happening on {{eventOn.strftime('%d')}}-{{eventTo.strftime('%d %b %Y')}} in Kathmandu University,
-        Dhulikhel, Kavre, Nepal. After the successful organization of the first-ever PostgreSQL Conference Nepal
-        in May 4-5, 2018, we are excited to announce this year’s conference. In the previous conference, we had
-        quite a few exciting talks from internationally renowned and prominent personalities from the PostgreSQL
-        community as well as from many local speakers. We hope to continue the trend for this year and have
-        similar support from the international community as well as locally.
-        <br>
-        <br>
-        With the increased globalization trends in
-        recent years, Nepal has continued to be one of the major attractions not just because of its rich natural
-        beauty but also because of the fact that it contributes significantly to the global software development
-        ecosystem through our talented pool of Nepali computer professionals. In this context, Open Source
-        applications and solutions like PostgreSQL have a lot of prospects in the overall development and prosperity
-        of Nepal.
-        <br>
-        One of the goals of PostgreSQL conferences in Nepal is to add momentum to the current use and
-        adoption of PostgreSQL as a first choice of the database, fuel the advocacy and awareness about the use
-        and benefits among policymakers and implementation agencies in the government, private and the public.
-        This conference is an opportunity to bring together local and international experts, novices, enthusiasts and
-        the like to discuss technical, non-technical, social and other issues on PostgreSQL thus helping to build a
-        strong PostgreSQL community in Nepal which will not only be capable to solve the local technical
-        problems locally but provide an international platform to the community members.
+<div class="content-container">
+    <h1>About</h1>
+    <h3>organizing committee/talks selection committee</h3>
 
-        <br>
-        <br>
-        Please check our <a href="/code_of_conduct">Code of conduct</a>.
+    <div class="about-content">
+        <div class="welcome-content">
+        <h1>Welcome</h1>
+        <p>
+            Welcome to the second PostgreSQL Conference happening on 5-6 May 2023 in Kathmandu University, 
+            Dhulikhel, Kavre, Nepal. After the successful organization of the first-ever PostgreSQL Conference
+             Nepal in May 4-5, 2018, we are excited to announce this year’s conference. In the previous conference, 
+             we had quite a few exciting talks from internationally renowned and prominent personalities from the PostgreSQL
+              community as well as from many local speakers. We hope to continue the trend for this year and have similar support
+               from the international community as well as locally.
+            </p>
+        <p>
+            With the increased globalization trends in recent years, Nepal has continued to be one of the major attractions
+             not just because of its rich natural beauty but also because of the fact that it contributes significantly to the global 
+             software development ecosystem through our talented pool of Nepali computer professionals. In this context, Open Source
+              applications and solutions like PostgreSQL have a lot of prospects in the overall development and prosperity of Nepal.
+        </p>
+        <p>
+            One of the goals of PostgreSQL conferences in Nepal is to add momentum to the current use and adoption of PostgreSQL as a 
+            first choice of the database, fuel the advocacy and awareness about the use and benefits among policymakers and implementation 
+            agencies in the government, private and the public. This conference is an opportunity to bring together local and international 
+            experts, novices, enthusiasts and the like to discuss technical, non-technical, social and other issues on PostgreSQL thus helping
+             to build a strong PostgreSQL community in Nepal which will not only be capable to solve the local technical problems locally but
+              provide an international platform to the community members.
+        </p>
+        <p>
+            Please check our <a href="/code_of_conduct">Code of conduct.</a>
+        </p>
+    </div>
 
-    </p>
-
-
-    <div class="section_header_small">Organizing committee</div>
-    <div style="padding-left: 20px;">
+    <div class="welcome-content">
+        <h1>Organizing committee</h1>
         <ol>
-            <li>Dr. Oleg Bartunov - Postgres Professional, Russia</li>
-            <li>Mr. Andreas Scherbaum - European PostgreSQL</li>
-            <li>Dr. Bal Krishna Bal - Kathmandu University</li>
-            <li>Mr. Hempal Shrestha - Civil Society and Open Source Activist</li>
-            <li>Dr. Sushil Shrestha - Kathmandu University</li>
-            <li>Mr. Rupak Raj Ghimire - Uniaxial Softwares Pvt. Ltd.</li>
-            <li>Mr. Rohit Man Amatya - Beta Analytics Pvt. Ltd.</li>
-            <li>Mr. Chandan Gupta - RainLocal Inc.</li>
-            <li>Mr. Sagun Dhakhwa - Outlines Research & Development</li>
+            <li><p>Dr. Oleg Bartunov - Postgres Professional, Russia</p></li>
+            <li><p>Mr. Andreas Scherbaum - European PostgreSQL</p></li>
+            <li><p>Dr. Bal Krishna Bal - Kathmandu University</p></li>
+            <li><p>Mr. Hempal Shrestha - Civil Society and Open Source Activist</p></li>
+            <li><p>Dr. Sushil Shrestha - Kathmandu University</p></li>
+            <li><p>Mr. Rupak Raj Ghimire - Uniaxial Softwares Pvt. Ltd.</p></li>
+            <li><p>Mr. Rohit Man Amatya - Beta Analytics Pvt. Ltd.</p></li>
+            <li><p>Mr. Chandan Gupta - RainLocal Inc.</p></li>
+            <li><p>Mr. Sagun Dhakhwa - Outlines Research & Development</p></li>
         </ol>
     </div>
 
-
-    <div class="section_header_small">Talks selection committee</div>
-    <div style="padding-left: 20px;">
+    <div class="welcome-content">
+        <h1>Talks selection committee</h1>
         <ol>
-            <li>Dr. Oleg Bartunov</li>
-            <li>Mr. Andreas Scherbaum</li>
-            <li>Dr. Bal Krishna Bal</li>
-            <li>Hempal Shrestha</li>
-            <li>Rupak Raj Ghimire</li>
+            <li><p>Dr. Oleg Bartunov</p></li>
+            <li><p>Mr. Andreas Scherbaum</p></li>
+            <li><p>Dr. Bal Krishna Bal</p></li>
+            <li><p>Hempal Shrestha</p></li>
+            <li><p>Rupak Raj Ghimire</p></li>
         </ol>
     </div>
 
-    <div class="section_header_small">Financial Disclosure</div>
-    <div>
-        Our sponsors have provided complete financial backing for the PostgreSQL Conference Nepal.
-        It is hereby stipulated that the expenses associated with the conference shall be 
-        covered by our sponsors, and any surplus funds shall be allocated towards 
-        financing another conference.
-        <br>
-        The financial statement shall be included into the 
-        conference completion report and the report 
-        will be shared to all the sponsors.
+    <div class="welcome-content">
+        <h1>Financial Disclosure</h1>
+        <p>
+            Our sponsors have provided complete financial backing for the PostgreSQL Conference Nepal. It is hereby stipulated that 
+            the expenses associated with the conference shall be covered by our sponsors, and any surplus funds shall be allocated 
+            towards financing another conference. The financial statement shall be included into the conference completion report and 
+            the report will be shared to all the sponsors.
+        </p>
     </div>
+    </div>
+
+</div>
+
 {% endblock %}
