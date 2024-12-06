@@ -7,8 +7,15 @@
 <div class="content-container">
     <div class="banner-container">
         <div class="hero">
-            <h1>Third PostgreSQL Conference Nepal, 2025</h1> 
-            <h1>5 to 6 May, 2025</h1> 
+            <div class="text">
+                <h1>Third PostgreSQL Conference Nepal, 2025</h1> 
+                <h1>5 to 6 May, 2025</h1> 
+            </div>
+
+            <!-- instead of flex try making it a background -->
+            <div class="illustration"> 
+                <img src="" alt="">
+            </div>
         </div>
     </div>
 
