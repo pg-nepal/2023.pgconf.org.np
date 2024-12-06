@@ -3,14 +3,15 @@
 
 {% block main_content %}
 
-<link rel="stylesheet" href="/static/css/registration.css">
 <div class="content-container">
     <div class="registration-content">
         <h1>Registration</h1>
         <p>Register for the events</p>
 
         <div class="training">
+        <div class="box">
         <p>Coming Soon..</p>
+        </div>
         </div>
        
 </div>
