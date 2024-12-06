@@ -2,7 +2,6 @@
 {% block title%}/About{% endblock %}
 
 {% block page_title%}
-<link rel="stylesheet" href="/static/css/about.css">
 
 <div class="content-container">
     <h1>About</h1>
