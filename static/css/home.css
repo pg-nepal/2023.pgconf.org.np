@@ -124,12 +124,21 @@ img{
     align-items: center; /* Align items vertically */
   }
   
-  .image {
-    flex: 1 1 auto; /* Make the images flexible */
-    max-width: 100%; /* Prevent overflow */
-    height: 400px; /* Set a fixed height for uniformity */
-    object-fit: cover; /* Ensure the images fill the container proportionally */
-  }
+.image {
+flex: 1 1 auto; /* Make the images flexible */
+max-width: 100%; /* Prevent overflow */
+height: 400px; /* Set a fixed height for uniformity */
+object-fit: cover; /* Ensure the images fill the container proportionally */
+}
+
+.countDown {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    row-gap: 20px;
+    column-gap: 20px;
+    margin-bottom: 50px;
+}
   
 
 .intro{
