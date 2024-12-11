@@ -9,7 +9,7 @@
         <div class="text">
             <h1>Third PostgreSQL Conference Nepal, 2025</h1>
             <h1>{{eventOn.strftime('%_d')}} — {{eventTo.strftime('%_d %B, %Y')}}</h1>
-            <div style="display: flex; justify-content: space-evenly; width:30%; margin:auto">
+            <div class="countDown">
                 <div>Days<br> <span id="days">115</span></div>
                 <div>Hours<br><span id="hours">13</span></div>
                 <div>Minutes<br> <span id="minutes">2</span></div>
