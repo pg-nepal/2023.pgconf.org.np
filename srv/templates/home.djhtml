@@ -40,36 +40,32 @@
                     </p>
                 </div>
 
-                <div class="conference-conclusion">
+                <div class="parts">
                     <h1>Second Conference Conclusion</h1>
+                    <div class="image-container">
+                        <img src="/static/main_conference.jpg" alt="main conference">
+                        <img src="/static/training3.jpeg" alt="training">
+                    </div>
                 </div>
 
-                <div class="conference-conclusion">
+                <div class="home-content">
                     <h1>Main Conference Schedule</h1>
-                    <div class="box">
-                        <h1>Coming Soon...</h1>
-                    </div>
+                    {% include 'comingSoon.djhtml' %}
                 </div>
 
-                <div class="conference-conclusion">
+                <div class="home-content">
                     <h1>Register</h1>
-                    <div class="box">
-                        <h1>Coming Soon...</h1>
-                    </div>
+                    {% include 'comingSoon.djhtml' %}
                 </div>
 
-                <div class="conference-conclusion">
+                <div class="home-content">
                     <h1>Pre-Conference Workshop</h1>
-                    <div class="box">
-                        <h1>Coming Soon...</h1>
-                    </div>
+                    {% include 'comingSoon.djhtml' %}
                 </div>
 
-                <div class="conference-conclusion">
+                <div class="home-content">
                     <h1>Pre-Conference Workshop</h1>
-                    <div class="box">
-                        <h1>Coming Soon...</h1>
-                    </div>
+                    {% include 'comingSoon.djhtml' %}
                 </div>
             </div>
 

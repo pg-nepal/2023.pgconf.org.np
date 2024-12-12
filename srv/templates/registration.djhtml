@@ -11,9 +11,7 @@
                     <p>Register for the events</p>
 
                     <div class="training">
-                        <div class="box">
-                            <p>Coming Soon..</p>
-                        </div>
+                        {% include 'comingSoon.djhtml' %}
                     </div>
                 </div>
             </div>
