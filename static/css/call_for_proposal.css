@@ -1,4 +1,6 @@
-.button3{
+.button{
+    width: 25%;
+    font-family: 'DM Sans', sans-serif;
     text-decoration: none;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -10,11 +12,11 @@
     color: rgb(234, 234, 234);
     padding: 5px;
     font-weight: bold;
-    transition: border-color 0.2s, box-shadow 0.2s transform 0.3s ease;
+    transition: border-color 0.2s, box-shadow 0.2s, transform 0.3s ease;
     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
 }
 
-.button3:hover{
+.button:hover{
     background-color: #c91818;
     box-shadow:  0 2px 4px rgba(255, 255, 255, 0.1);
     color: white;
