@@ -2,7 +2,7 @@
 {% set pageTitle = '/ Home' %}
 
 
-{% block main %}
+{% block main_content %}
     <link rel="stylesheet" href="/static/css/home.css">
 
     <div class="banner-container">
