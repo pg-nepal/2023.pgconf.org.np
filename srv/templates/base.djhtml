@@ -26,7 +26,9 @@
             {% include 'navbar.html' %}
         </header>
 
-        {% block main %}{% endblock %}
+        <div class="main_background">
+            {% block main_content %}{% endblock %}
+        </div>
 
         <footer class="footer">
             <div class="footer-content">
