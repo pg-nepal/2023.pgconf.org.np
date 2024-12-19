@@ -31,7 +31,6 @@
 
                                 <div class="fields">
                                     <label for="country">Country</label>
-                                    <label for="session_type">Session Type</label>
                                     <select id="session_type" name="session_type" required>
                                         <option value="Nepal">Nepal</option>
                                         <option value="USA">USA</option>
@@ -42,12 +41,12 @@
 
                                 <div class="fields">
                                     <label for="job">Job</label>
-                                    <input type="job" id="job" name="job" placeholder="job" required>
+                                    <input type="job" id="job" name="job" placeholder="job">
                                 </div>
 
                                 <div class="fields">
                                     <label for="phonenum">Phone Number</label>
-                                    <input type="number" id="phonenum" name="phonenum" placeholder="Phone Number" required>
+                                    <input id="phonenum" name="phonenum" placeholder="Phone Number">
                                 </div>
 
                                 <div class="field-1">
@@ -69,13 +68,8 @@
                                 </div>
 
                                 <div class="field-2">
-                                    <label for="abstract">Abstract of your session.</label>
-                                    <textarea name="abstract" id="abstract" placeholder="Abstract of your session."
-                                              required></textarea>
-
-                                    <label for="learning_objective">Learning Objective of the session.</label>
-                                    <textarea name="learning_objective" id="learning_objective"
-                                              placeholder=" Learning Objective of your session." required></textarea>
+                                    <label for="abstract">Abstract</label>
+                                    <textarea name="abstract" id="abstract" placeholder="Abstract of your session." required></textarea>
                                 </div>
                             </div>
 
@@ -93,3 +87,4 @@
         </div>
     </div>
 {% endblock %}
+1
