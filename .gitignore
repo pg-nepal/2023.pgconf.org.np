@@ -2,5 +2,6 @@ dist
 .ignore
 venv
 .pyc
+.env
 __pycache__
 .sconsign.dblite

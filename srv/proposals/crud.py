@@ -8,7 +8,7 @@ import srv.auth
 from srv import app
 
 
-@app.get('/proposals/form')
+@app.get('/proposal/form')
 def proposal_form():
     return flask.render_template('proposalForm.djhtml')
 
@@ -65,7 +65,7 @@ def proposal_read(pk):
 
     return flask.render_template(
         'admin/proposal_details.djhtml',
-        proposal = row._asdict()
+        proposal =cursor._asdict()
     )
 
 

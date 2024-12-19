@@ -1,9 +1,15 @@
 from http import HTTPStatus
+from dotenv import load_dotenv
 
+import os
 import flask
 
+load_dotenv()
+
+proposal_key = os.getenv('PROPOSAL_KEY')
+
 keys = {
-    'cm9vdDowCg==' : 'root',
+    'proposal_key' : 'root',
 }
 
 
