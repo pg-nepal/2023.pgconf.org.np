@@ -1,4 +1,4 @@
-{% extends 'base_inner.djhtml' %}
+{% extends 'base.djhtml' %}
 {% set pageTitle= '/ Proposals' %}
 
 {% block main_content %}
@@ -7,7 +7,7 @@
     {% if not proposal %}
     <h1>No Proposal Details</h1>
     {% else %}
-    <a href="/admin/proposals"
+    <a href="/proposals"
     style="
     font-size: 30px;
     text-decoration: none;
