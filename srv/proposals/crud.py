@@ -50,6 +50,10 @@ def proposal_create():
 
 @app.get('/proposals/<int:pk>')
 def proposal_read(pk):
+    isAdmin = srv.auth.isValid(flask.request)
+    if isAdmin is False:
+        return srv.auth.respondInValid()
+        
     query = sa.select(
         db.proposals.Proposals,
     ).where(
@@ -64,8 +68,8 @@ def proposal_read(pk):
         return 'Invalid Pk', 400
 
     return flask.render_template(
-        'admin/proposal_details.djhtml',
-        proposal =cursor._asdict()
+        '/admin/proposal_details.djhtml',
+        proposal =row._asdict()
     )
 
 
